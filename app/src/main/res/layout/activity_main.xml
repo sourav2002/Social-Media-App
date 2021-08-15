@@ -8,10 +8,10 @@
 
 
     <com.fxn.BubbleTabBar
+        android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="7dp"
-        android:id="@+id/bottomBar"
         android:background="#FFFFFF"
         android:layout_alignParentBottom="true"
         app:bubbletab_icon_size="20dp"

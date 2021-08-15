@@ -13,19 +13,16 @@
         android:id="@+id/search"
         android:icon="@drawable/search"
         android:iconTint="@color/purple_200"
-
         android:title="Search" />
+
     <item
         android:id="@+id/post"
         android:icon="@drawable/plus"
-
         android:iconTint="#4DB6AC"
-
         android:title="Post" />
     <item
         android:id="@+id/notification"
         android:icon="@drawable/bell"
-
         android:iconTint="#64B5F6"
         android:title="notify" />
     <item

@@ -28,60 +28,43 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.frame_layout, new Home());
         transaction.commit();
 
+        binding.bottomBar.addBubbleListener(new OnBubbleClickListener() {
+            @Override
+            public void onBubbleClick(int i) {
+                switch (i) {
 
+                    case R.id.home2:
+                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                        transaction.replace(R.id.frame_layout, new Home());
+                        transaction.commit();
+                        break;
 
-       
+                    case R.id.search2:
+                        FragmentTransaction search = getSupportFragmentManager().beginTransaction();
+                        search.replace(R.id.frame_layout, new Search());
+                        search.commit();
+                        break;
 
+                    case R.id.post2:
+                        FragmentTransaction post = getSupportFragmentManager().beginTransaction();
+                        post.replace(R.id.frame_layout, new Post());
+                        post.commit();
+                        break;
 
-//        binding.bottomBar.addBubbleListener(new OnBubbleClickListener() {
-//            @Override
-//            public void onBubbleClick(int i) {
-//
-//                switch (i) {
-//
-//                    case 0:
-//
-//                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//                        transaction.replace(R.id.frame_layout, new Home());
-//                        transaction.commit();
-//                        break;
-//
-//                    case 1:
-//
-//                        FragmentTransaction search = getSupportFragmentManager().beginTransaction();
-//                        search.replace(R.id.frame_layout, new Search());
-//                        search.commit();
-//                        break;
-//
-//                    case 2:
-//
-//
-//                        FragmentTransaction post = getSupportFragmentManager().beginTransaction();
-//                        post.replace(R.id.frame_layout, new Post());
-//                        post.commit();
-//                        break;
-//
-//                    case 3:
-//
-//
-//                        FragmentTransaction notify = getSupportFragmentManager().beginTransaction();
-//                        notify.replace(R.id.frame_layout, new Notify());
-//                        notify.commit();
-//                        break;
-//
-//                    case 4:
-//
-//
-//                        FragmentTransaction profile = getSupportFragmentManager().beginTransaction();
-//                        profile.replace(R.id.frame_layout, new Profile());
-//                        profile.commit();
-//                        break;
-//
-//                }
-//
-//
-//            }
-//        });
+                    case R.id.notify:
+                        FragmentTransaction notify = getSupportFragmentManager().beginTransaction();
+                        notify.replace(R.id.frame_layout, new Notify());
+                        notify.commit();
+                        break;
+
+                    case R.id.profile2:
+                        FragmentTransaction profile = getSupportFragmentManager().beginTransaction();
+                        profile.replace(R.id.frame_layout, new Profile());
+                        profile.commit();
+                        break;
+                }
+            }
+        });
 
     }
 }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.innovativetech.socialmedia.Fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+    <fragment
+        android:id="@+id/search2"
+        android:name="com.innovativetech.socialmedia.Fragments.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+    </fragment>
+    <fragment
+        android:id="@+id/post2"
+        android:name="com.innovativetech.socialmedia.Fragments.Post"
+        android:label="fragment_post"
+        tools:layout="@layout/fragment_post" >
+    </fragment>
+    <fragment
+        android:id="@+id/notify"
+        android:name="com.innovativetech.socialmedia.Fragments.Notify"
+        android:label="fragment_notify"
+        tools:layout="@layout/fragment_notify" >
+    </fragment>
+    <fragment
+        android:id="@+id/profile2"
+        android:name="com.innovativetech.socialmedia.Fragments.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
